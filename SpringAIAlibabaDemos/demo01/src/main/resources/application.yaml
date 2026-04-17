@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: demo01
+  ai:
+    dashscope:
+      api-key: xxx
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        model: qwen3.5:4b
+server:
+  port: 8081
+  servlet:
+    encoding:
+      enabled: true
+      force: true
+      charset: UTF-8
