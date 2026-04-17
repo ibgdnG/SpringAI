@@ -18,6 +18,8 @@ public class ChatMemoryController {
 
     /*
         http:localhost:8082/ask?userId=1001&question=我喜欢黑色
+        http:localhost:8082/ask?userId=1001&question=我喜欢什么颜色
+        http:localhost:8082/ask?userId=2001&question=我喜欢什么颜色
      */
 
     // 注入ChatClient
