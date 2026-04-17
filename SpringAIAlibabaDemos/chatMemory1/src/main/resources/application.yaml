@@ -1,0 +1,22 @@
+server:
+  port: 8082  # 指定当前服务的端口
+  servlet:
+    encoding:
+      enabled: true # 大模型对话中文乱码处理
+      force: true
+      charset: utf-8
+spring:
+  application:
+    name: chatMemory1
+  ai:
+    dashscope:
+      api-key: xxx
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        model: qwen3.5:4b
+  datasource:
+    url: jdbc:mysql://localhost:3306/springai?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
